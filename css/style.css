@@ -6,17 +6,16 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   max-width: 100%;
-  height: 100vh; /* Set height to 100vh without max-height */
+  height: 100vh;
 }
 
-
 #banner-text {
-  font-family:'Lato', sans-serif !important ;
+  font-family: 'Lato', sans-serif !important;
   text-align: center;
   color: #ffffff;
 }
 
-#banner-text h1{
+#banner-text h1 {
   font-weight: bold;
   font-size: 30px;
 }
@@ -27,52 +26,53 @@ body {
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .card {
-    background-image: url("/assets/images/card-bg.png");
-    border-radius: 10px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    max-width: 400px;
-    width: 100%;
-    
-  }
-  
-  .title {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #ffffff;
-  }
-  
-  .song-info {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #ffffff;
-  }
-  
-  .song-info img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 10px;
-  }
-  
-  .song-info p {
-    margin-bottom: 5px;
-  }
-  
- /* Play Controls */
+  display: flex;
+  flex-direction: column; /* Change the flex direction to column */
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+
+.card {
+  background-image: url("/assets/images/card-bg.png");
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.song-info {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.song-info img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.song-info p {
+  margin-bottom: 5px;
+}
+
+/* Play Controls */
 .play-controls {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px; /* Add some space between play controls and volume/time controls */
+  margin-bottom: 10px;
 }
 
 .play-controls button {
@@ -80,7 +80,7 @@ body {
   background-color: transparent;
   border: none;
   font-size: 24px;
-  margin: 0 10px; /* Adjust button spacing */
+  margin: 0 10px;
   cursor: pointer;
   transition: opacity 0.3s ease;
 }
@@ -89,7 +89,7 @@ body {
 .volume-and-time {
   display: flex;
   align-items: center;
-  margin: 10px 0; /* Add some space around volume and time controls */
+  margin: 10px 0;
 }
 
 .volume-control-container {
@@ -99,15 +99,14 @@ body {
 }
 
 .volume-control {
-  width: 100px; /* Adjust the width of the volume control */
-  margin-right: 10px; /* Add some space between volume control and time controls */
+  width: 100px;
+  margin-right: 10px;
 }
 
 .current-volume {
   color: #ffffff;
-  font-size: 18px; /* Adjust font size as needed */
+  font-size: 18px;
 }
-
 
 .time-track {
   display: flex;
@@ -115,20 +114,38 @@ body {
   color: #ffffff;
 }
 
-.time-track input {
+time-track input {
   flex-grow: 1;
-  margin: 0 10px; /* Adjust spacing between time track components */
+  margin: 0 10px;
 }
-  
-  @media (max-width: 768px) {
-    .card {
-      max-width: 90%;
-    }
+
+#install-button {
+  background-color: #ffffff;
+  color: #333;
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#install-button:hover {
+  background-color: #000;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 90%;
   }
-  
-  @media (max-width: 480px) {
-    .card {
-      max-width: 95%;
-    }
+}
+
+@media (max-width: 480px) {
+  .card {
+    max-width: 95%;
   }
-  
+}
