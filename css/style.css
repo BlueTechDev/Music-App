@@ -13,34 +13,33 @@ body {
   font-family: 'Lato', sans-serif !important;
   text-align: center;
   color: #ffffff;
+  padding: 20px; /* Add some padding for space around the text */
 }
 
 #banner-text h1 {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 24px; /* Slightly reduce the font size for mobile */
 }
 
 #banner-text p {
   font-style: italic;
-  font-size: 15px;
+  font-size: 14px; /* Reduce the font size for mobile */
 }
 
 .container {
   display: flex;
-  flex-direction: column; /* Change the flex direction to column */
+  flex-direction: column;
   align-items: center;
   min-height: 100vh;
   padding: 20px;
 }
-
 
 .card {
   background-image: url("/assets/images/card-bg.png");
   border-radius: 10px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  max-width: 600px;
-  width: 100%;
+  max-width: 100%; /* Allow the card to take full width on mobile */
 }
 
 .title {
@@ -56,8 +55,8 @@ body {
 }
 
 .song-info img {
-  width: 200px;
-  height: 200px;
+  width: 100px; /* Reduce the image size for mobile */
+  height: 100px;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 10px;
@@ -105,7 +104,7 @@ body {
 
 .current-volume {
   color: #ffffff;
-  font-size: 18px;
+  font-size: 16px; /* Slightly reduce the font size for mobile */
 }
 
 .time-track {
@@ -114,7 +113,7 @@ body {
   color: #ffffff;
 }
 
-time-track input {
+.time-track input {
   flex-grow: 1;
   margin: 0 10px;
 }
@@ -141,11 +140,5 @@ time-track input {
 @media (max-width: 768px) {
   .card {
     max-width: 90%;
-  }
-}
-
-@media (max-width: 480px) {
-  .card {
-    max-width: 95%;
   }
 }
