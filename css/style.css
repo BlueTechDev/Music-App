@@ -69,22 +69,20 @@ body {
 /* Play Controls */
 .play-controls {
   display: flex;
-  flex-direction: column; /* Change to a column layout on mobile */
   justify-content: center;
   align-items: center;
-  margin-top: 10px; /* Add margin to the top to separate from the card */
+  margin-bottom: 5px;
 }
 
 .play-controls button {
   color: #ffffff;
   background-color: transparent;
   border: none;
-  font-size: 24px;
-  margin: 5px 0; /* Add vertical margin to separate buttons */
+  font-size: 14px;
+  margin: 0 10px;
   cursor: pointer;
   transition: opacity 0.3s ease;
 }
-
 
 /* Volume and Time Controls */
 .volume-and-time {
