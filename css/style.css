@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("/assets/images/color-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 100vh; /* Set height to 100vh without max-height */
+}
+
+
+#banner-text {
+  font-family:'Lato', sans-serif !important ;
+  text-align: center;
+  color: #ffffff;
+}
+
+#banner-text h1{
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#banner-text p {
+  font-style: italic;
+  font-size: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card {
+    background-image: url("/assets/images/card-bg.png");
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .song-info {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .song-info img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .song-info p {
+    margin-bottom: 5px;
+  }
+  
+ /* Play Controls */
+.play-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px; /* Add some space between play controls and volume/time controls */
+}
+
+.play-controls button {
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  margin: 0 10px; /* Adjust button spacing */
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+/* Volume and Time Controls */
+.volume-and-time {
+  display: flex;
+  align-items: center;
+  margin: 10px 0; /* Add some space around volume and time controls */
+}
+
+.volume-control-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.volume-control {
+  width: 100px; /* Adjust the width of the volume control */
+  margin-right: 10px; /* Add some space between volume control and time controls */
+}
+
+.current-volume {
+  color: #ffffff;
+  font-size: 18px; /* Adjust font size as needed */
+}
+
+
+.time-track {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.time-track input {
+  flex-grow: 1;
+  margin: 0 10px; /* Adjust spacing between time track components */
+}
+  
+  @media (max-width: 768px) {
+    .card {
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      max-width: 95%;
+    }
+  }
+  
